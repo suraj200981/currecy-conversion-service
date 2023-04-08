@@ -13,6 +13,9 @@ public class CurrecyConversion {
     private String environment;
 
 
+    public CurrecyConversion(){
+
+    }
     public CurrecyConversion(Long id, String currencyFrom, String currencyTo, int quantity ,BigDecimal conversionMultiple, String environment, BigDecimal totalCalculatedAmount) {
         this.id = id;
         this.currencyFrom = currencyFrom;
@@ -21,6 +24,14 @@ public class CurrecyConversion {
         this.conversionMultiple = conversionMultiple;
         this.environment = environment;
         this.totalCalculatedAmount = totalCalculatedAmount;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public Long getId() {
